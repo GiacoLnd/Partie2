@@ -11,7 +11,7 @@ function afficherGenre($element2) {
     $result = "<form action='#' method='POST'>";
     foreach ($element2 as $value) {
         $result .= "<input type='radio' id='$value' name ='genre' ";
-        $result .= "<label for = 'genre'>$value<br></label>";
+        $result .= "<label for = '$value'>$value<br></label>";
     }
     $result .= "</form>";
     return $result;
